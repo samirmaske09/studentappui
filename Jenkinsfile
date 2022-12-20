@@ -1,8 +1,11 @@
 pipeline{
     agent any
     stages{
-        stage("hello word"){
-            echo "Hello word"
+        stage("Git Checkout"){
+            steps{
+                git 'https://github.com/samirmaske09/studentappui.git'
+            }
+            
         }
     }
 }
